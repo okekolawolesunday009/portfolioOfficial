@@ -8,130 +8,261 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    <title>OkeKolawole Porfolio</title>
 </head>
-<body>
+<body class="hompage">
 
-    <header>
-        <div class="content">
+    <header class="header">
+        <div class="container">
+
+       
         
         <div class="logo">
-            Port<span>folio</span>
+            <h1>Port<span>folio</span></h1>
         </div>
-        <div>
-            <nav id="nav" class="navs">
-                <a>Home</a>
-                <a>Service</a>
-                <a>Contact</a>
-                <a>Projects</a>
+
+       
+            <input type="checkbox" class="menu-btn" name="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+        <!-- <input type="checkbox" class="men-btn" id="menu-toggle">
+<label for="menu-toggle" class="navicon">&#9776;</label>
+         -->
+
+        <nav class="navbar-menu">
+             <ul class="nav">
+                <li class="nav-item"> <a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"> <a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"> <a href="#projects"  class="nav-link">Projects</a></li>
+
+                <li class="nav-item"> <a href=""  class="nav-link">Resume</a></li>
+                <li class="nav-item">
+                    <form action="#" method="post" class="form-search">
+                      <input type="search" name="q" id="search-input" placeholder="Search..." aria-label="Search through site content">
+                      <button class="search-button">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="search-icon">
+                          <title>
+                            Search icon
+                          </title>
+                          <path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path>
+                        </svg>
+                      </button>
+                    </form>
+                  </li>      
+            </ul>
                 
-            </nav>
-        </div>
-        <div>
-            
-            <button class="connect">Download Resume</button>
-              <button id="collapse" onclick="closeBtn()"class="collapse"><ion-icon name="reorder-three-outline"></ion-icon></button>
-            
-        </div>
-        
-        </div>
+        </nav>
+
+    </div>
+  
     </header>
-    <section>
-        <div class="content">
-            <h1>Oke <span>kolawole</span> Sunday</h1>
-        </div>
-        <div class="weddev">
-            <h2 class="webdev">I am a web developer</h2>
-        </div>
-        <form action="">
-            <p>Please Subscribe to my News Channel</p>
-            <input type="text" placeholder="OKekolawole@gmail.com">
-            <button>Subscribe</button>
-        </form>
-    </section>
-    </div>
-    </section>
-    <article>
+
+    <!-- <section class="pop-up">
+
+      <div class="container">
+
+        <input type="checkbox" class="menu-close" name="close-btn" id="menu-close">
+        <label for="menu-close" class="menu-close">
+            <span class="menuicon"></span>
+        </label>
+
+      </div>
+      <h1>pop</h1>
+
+    </section> -->
+    <main>
         
-        <div class="container2" id="about.html">
-            <div class="box_container">
-               <img src="./Kola Black BG.png" alt="">
+    <section class="section-hero section hero-homepage">
+        <div class="container">
+            <div class="section-body">
+                <section class="section-inner">
+                    <h1 class="section-title">Oke <span>kolawole</span> Sunday</h1>    
+                    <p class="section-tagline">I am a web developer</p>
+                    <form action="">
+                        <p class="section-tagline">Please Subscribe to my News Channel</p>
+                        <input type="text" class="input-subscribe" placeholder="OKekolawole@gmail.com">
+                        <button class="button">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+    </section>
+    <!-- <!– About Us section –> -->
+    <section id="about" class="section section-about-us">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title" style="color: white;">About Me</h1>
+          <p class="section-tagline section-textline">Everything about me</p>
+        </header>
+
+        <div class="section-body row">
+            <div class="col-1-2">
+                <img
+                sizes="(max-width: 2700px) 40vw, 1080px"
+                srcset="
+                ./images/Kola_Black_BG_wrwtxe_c_scale,w_380.png 380w,
+                ./images/Kola_Black_BG_wrwtxe_c_scale,w_604.png 604w,
+                ./images/Kola_Black_BG_wrwtxe_c_scale,w_782.png 782w,
+                ./images/Kola_Black_BG_wrwtxe_c_scale,w_941.png 941w,
+                ./images/Kola_Black_BG_wrwtxe_c_scale,w_1080.png 1080w"
+                src="./images/Kola_Black_BG_wrwtxe_c_scale,w_1080.png"
+                alt="">
+                
+            </div>
                
-               <div class="about">
-                   <h1>About Me</h1>
-                   <p>Developer <span>& Designer</span></p>
-                   <p>I'm a developer with a teaching background in an Education School and returned to be programmer. My only objective is to serve you rght with all exclusve ideas, designs, 
+            <div class="col-1-2">
+                   <h1></h1>
+                   <h1 class="section-tagline">Developer <span>& Designer</span></h1>
+                   <p class="">I'm a developer with a teaching background in an Education School and returned to be programmer. My only objective is to serve you rght with all exclusve ideas, designs, 
                        frameworks to best suits your projects.</p>
-               <button>Read more</button>
-               </div>
+               <button class="button">Read more</button>
             </div>
-       </div>
-
-    </article>
-    <aside>
-        
-        <!-- service -->
-    
-        <div class="service" id="Service.html">
-            <div class="title">
-                <h1>My Projects</h1>
-            </div>
-            <div class="box">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="pra">
-                        <h2>Serch Business</h2>
-                       <p><a href="https://guileless-flan-27d53f.netlify.app">link</a>
-                       <br>This projected aimed at linking artisans with work provider.</p>
-                      <button>Read more</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="pra">
-                        <h2>Interior design (html/css)</h2>
-                       <p><a href="www.bambam-interiors.netlify.app">link</a> <br>
-                       We all love art and art goes well on decorations. delivering
-			            </p>
-                      <button>Read more</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="pra">
-                        <h2>Realestate App</h2>
-                       <p><a href="https://realestate-react-d496c.web.app/">link</a>
-                       Incorporating my programming skill to electronic commerce or internet commerce.
-                       </p>
-                      <button>Read more</button>
-                    </div>
-                </div>
-            </div>
-               
-
-
 
         </div>
-
-    </aside>
-
+              
+      </div>
+    </section>
     
-    <div class="contact">
-        <p>let me build you a website</p>
-        <button class="hire">Hire me</button>
-    </div>
+        
+        <!-- Works -->
+        <section id="projects" class="section section-works" >
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-title">Works</h2>
+              <p class="section-tagline">Take a look at myportfolio</p>
+            </header>
+ 
+            <div class="section-body">
+                <ul class="row">
+                    <li class="col-1-3">
+                      <article class="card-work">
+                        <div class="card-outer">
+                          <div class="card-image">
+                            <img src="images/real-estate.webp" alt="">
+                          </div>
+                          <div class="card-inner">
+                            <h3 class="card-title"><a target="_blank" href="https://realestate-react-d496c.web.app/">Real-estate web app</a></h3>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="col-1-3">
+                      <article class="card-work">
+                        <div class="card-outer">
+                          <div class="card-image">
+                            <img src="images/e-learning.jpeg" alt="">
+                          </div>
+                          <div class="card-inner">
+                            <h3 class="card-title"><a target="_blank" href="https://eddify-frontend.onrender.com/">Eddify</a></h3>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="col-1-3">
+                      <article class="card-work">
+                        <div class="card-outer">
+                          <div class="card-image">
+                            <img src="images/twitter.jpeg" alt="">
+                          </div>
+                          <div class="card-inner">
+                            <h3 class="card-title"><a target="_blank" href="https://twitterclone-11084.web.app/">Twitter Clone</a></h3>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
 
-    <footer>
-        <h3>Oke Kolawole Sunday</h3>
-        <p>Quality Assured with to serve you better</p>
+            </div>
 
-        <p><span>Copywrite @ Oke kolawole sunday</span> <p id="date"><?php 
-        function longdate($timestamp) {
-            return date("js Y", $timestamp);
-        }
-        echo longdate(time());
-        ?></p></p>
 
+
+           
+            </div>
+        </section>
+
+
+
+    <!--Conatact -->
+    <section id="contact" class="section section-contact" >
+
+        <div class="container">
+           <div class="section-body ">
+
+            <p>let me build you a website</p>
+            <button class="button hire">Hire me</button>
+
+           </div>
+              
+            
+        </div>
+
+    </section>
+    
+    </main>
+    <!– Footer –>
+    <footer class="footer" >
+      <div  class="container">
+        <div class="row">
+          <div class="col-1-2">
+            <h3>Oke <span>Kolawole</span> Sunday</h3>
+           
+          </div>
+          <div class="col-1-2">
+            <ul class="social nav">
+              <li class="social-item nav-item">
+                <a href="https://www.facebook.com/HolbertonSchool/" class="social-link">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                    <title>
+                      Facebook icon
+                    </title>
+                    <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item nav-item">
+                <a href="https://twitter.com/holbertonschool" class="social-link">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                    <title>
+                      Twitter icon
+                    </title>
+                    <path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.061a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 0 0 2.46-2.548l-.047-.02z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item nav-item">
+                <a href="https://www.instagram.com/holbertonschool/" class="social-link">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                    <title>
+                      Instagram icon
+                    </title>
+                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-1-2">
+            <p class="footer-copyright">© 2024 Oke Kolawole, made with ♥ .</p>
+          </div>
+          <div class="col-1-2">
+            <ul class="footer-nav nav">
+              <li class="footer-nav-item nav-item">
+                <a href="#" class="footer-nav-link">Terms of use</a>
+              </li>
+              <li class="footer-nav-item nav-item">
+                <a href="#" class="footer-nav-link">Privacy Policy</a>
+              </li>
+              <li class="footer-nav-item nav-item">
+                <a href="#" class="footer-nav-link">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
 
