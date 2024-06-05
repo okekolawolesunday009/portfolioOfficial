@@ -658,6 +658,9 @@ body {
       
      
     }
+    .nav .nav-item + .nav-item {
+      margin: 0;
+    }
 
     .logo {
       grid-column: 1; /* Adjust grid column for logo */
@@ -678,6 +681,20 @@ body {
         grid-row: 2; /* Adjust grid row */
         /* padding: 1rem; */
         /* background-color: green; */
+    }
+    
+ .navbar-menu ul{
+      /* background-color: antiquewhite; */
+      margin: 0 auto;
+    }
+ .navbar-menu ul li{
+      /* background-color: red; */
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+
     }
 
   
@@ -945,6 +962,9 @@ span{
 .section-body h1{
   color: var(--color-white);
 }
+.section{
+  margin-top: 4rem;
+}
 
 .section-header {
   text-align: var(--section-header-align);
@@ -1043,6 +1063,7 @@ img{
 @media screen and (max-width: 767px) {
   ul.row, .row{
       flex-direction: column;
+      
   }
 
   [class="col-"] {
